@@ -1,0 +1,21 @@
+{
+    "name": "Onyx - Boilerplate",
+    "short_name": "Onyx",
+    "icons": [
+      {
+        "src": "/img/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/img/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#1e0b36",
+    "description": "Boilerplate with Typescript, Next.js, Styled Components, Storybook, Jest and ESLint",
+    "background_color": "#1e0b36",
+    "start_url": "/",
+    "display": "fullscreen"
+  }

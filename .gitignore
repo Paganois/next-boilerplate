@@ -33,4 +33,9 @@ yarn-error.log*
 # vercel
 .vercel
 
-test/pages/__snapshots__/
+# ENV
+.env*
+
+# SW
+public/sw.js
+public/workbox-*.js
