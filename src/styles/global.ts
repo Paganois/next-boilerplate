@@ -7,6 +7,7 @@ export default createGlobalStyle`
             padding: 0;
             margin: 0;
             font-family: ${theme.font.family.body};
+            font-size: ${theme.font.size.medium};
         }
     `}
 
