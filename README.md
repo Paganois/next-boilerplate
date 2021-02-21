@@ -1,4 +1,4 @@
-![Onyx](https://raw.githubusercontent.com/onyxgg/next-boilerplate/master/public/img/logo.svg)
+![Onyx](https://raw.githubusercontent.com/onyxgg/next-boilerplate/main/public/img/logo.svg)
 
 This is a [Next.js](https://nextjs.org/) boilerplate by [`Onyx Team`](https://github.com/onyxgg).
 
