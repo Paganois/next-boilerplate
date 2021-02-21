@@ -9,7 +9,7 @@ import theme from "styles/theme";
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <Head>
                 <title>Onyx - Next Boilerplate</title>
                 <link
@@ -24,11 +24,9 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
                     content="Marketplace for multiple purposes"
                 />
             </Head>
-            <ThemeProvider theme={theme}>
-                <GlobalStyle />
-                <Component {...pageProps} />
-            </ThemeProvider>
-        </>
+            <GlobalStyle />
+            <Component {...pageProps} />
+        </ThemeProvider>
     );
 };
 
