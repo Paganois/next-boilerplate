@@ -9,10 +9,10 @@
         "airbnb",
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
         "plugin:prettier/recommended",
-        "prettier/@typescript-eslint",
         "prettier/react"
     ],
     "settings": {
@@ -28,18 +28,14 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
     "rules": {
-        "space-before-function-paren": "off",
-        "no-restricted-syntax": "off",
-        "no-await-in-loop": "off",
-        "no-use-before-define": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-props-no-spreading": "off",
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
-        "react/display-name": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "react/require-default-props": "off",
         "import/extensions": [
@@ -53,15 +49,7 @@
         "import/no-unresolved": "off",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.tsx", "**/*.test.ts", "**/*.spec.tsx", "**/*.spec.ts", "**/*.stories.tsx"]}],
         "import/prefer-default-export": "off",
-        "@typescript-eslint/ban-ts-comment": 0,
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-member-accessibility": "off",
-        "@typescript-eslint/indent": 0,
-        "@typescript-eslint/member-delimiter-style": 0,
-        "@typescript-eslint/no-explicit-any": 0,
-        "@typescript-eslint/no-var-requires": 0,
-        "@typescript-eslint/no-use-before-define": 0,
+        "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/no-unused-vars": [
             2,
             {

@@ -7,6 +7,7 @@ declare global {
     namespace jest {
         interface AsymmetricMatcher {
             $$typeof: symbol;
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             sample?: string | RegExp | object | Array<any> | Function;
         }
 
