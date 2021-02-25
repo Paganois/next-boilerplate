@@ -14,8 +14,7 @@ export const Wrapper = styled.main`
     justify-content: center;
 `;
 
-export const Logo = styled.img`
-    width: 25rem;
+export const Logo = styled.div`
     margin-bottom: 2rem;
 `;
 
