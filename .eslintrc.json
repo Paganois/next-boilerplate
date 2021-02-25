@@ -45,12 +45,14 @@
                 "tsx": "never"
             }
         ],
+        "import/no-cycle": "off",
         "import/no-unresolved": "off",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.tsx", "**/*.test.ts", "**/*.spec.tsx", "**/*.spec.ts", "**/*.stories.tsx"]}],
         "import/prefer-default-export": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-non-null-assertions": "off",
         "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-unused-vars": [
             2,
             {
