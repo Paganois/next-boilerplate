@@ -1,6 +1,6 @@
 ![Onyx](public/img/logo-bg.png?raw=true)
 
-<a href="https://github.com/onyxgg/next-boilerplate/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/onyxgg/next-boilerplate?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/onyxgg/next-boilerplate/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/onyxgg/next-boilerplate?style=for-the-badge&logo=github"></a>
 
 
 This is a [Next.js](https://nextjs.org/) boilerplate by [`Onyx Team`](https://github.com/onyxgg).
@@ -12,7 +12,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
+yarn dev # (recommended)
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
