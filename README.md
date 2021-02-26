@@ -1,5 +1,8 @@
 ![Onyx](public/img/logo-bg.png?raw=true)
 
+<a href="https://github.com/onyxgg/next-boilerplate/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/onyxgg/next-boilerplate?style=for-the-badge&logo=github"></a>
+
+
 This is a [Next.js](https://nextjs.org/) boilerplate by [`Onyx Team`](https://github.com/onyxgg).
 
 # Getting Started
