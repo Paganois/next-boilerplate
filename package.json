@@ -15,13 +15,8 @@
     "test:all": "yarn lint && yarn type-check && yarn test",
     "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn run test:all"
-    }
+    "build-storybook": "build-storybook -s ./public",
+    "postinstall": "husky install"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
