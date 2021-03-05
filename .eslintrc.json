@@ -47,7 +47,11 @@
         ],
         "import/no-cycle": "off",
         "import/no-unresolved": "off",
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/*.test.tsx", "**/*.test.ts", "**/*.spec.tsx", "**/*.spec.ts", "**/*.stories.tsx"]}],
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": ["**/*.test.tsx", "**/*.test.ts",
+                "**/*.spec.tsx", "**/*.spec.ts",
+                "**/*.stories.tsx", ".*/*.js"]
+        }],
         "import/prefer-default-export": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/no-non-null-assertions": "off",
