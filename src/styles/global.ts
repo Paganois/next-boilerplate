@@ -1,12 +1,22 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 
 export default createGlobalStyle`
-    html,
-    body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    ${({ theme }) => css`
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: ${theme.font.family.body};
+            font-size: ${theme.font.size.medium};
+        }
+    `}
+
+    html {
+        font-size: 65%;
+    }
+
+    html, body, #__next {
+        height: 100%;
     }
 
     a {
@@ -15,6 +25,8 @@ export default createGlobalStyle`
     }
 
     * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
 `;
