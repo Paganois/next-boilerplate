@@ -48,9 +48,12 @@
         "import/no-cycle": "off",
         "import/no-unresolved": "off",
         "import/no-extraneous-dependencies": ["error", {
-            "devDependencies": ["**/*.test.tsx", "**/*.test.ts",
+            "devDependencies": [
+                "**/*.test.tsx", "**/*.test.ts",
                 "**/*.spec.tsx", "**/*.spec.ts",
-                "**/*.stories.tsx", ".*/*.js"]
+                "**/*.stories.tsx", ".*/*.js",
+                ".*/*.ts"
+            ]
         }],
         "import/prefer-default-export": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
