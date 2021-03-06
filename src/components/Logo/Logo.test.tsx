@@ -24,7 +24,7 @@ describe("<Logo />", () => {
         renderWithTheme(<Logo />);
 
         expect(screen.getByLabelText(/Onyx/i).parentElement).toHaveStyle({
-            width: "18rem",
+            width: "20rem",
         });
     });
 
@@ -32,7 +32,7 @@ describe("<Logo />", () => {
         renderWithTheme(<Logo size="small" />);
 
         expect(screen.getByLabelText(/Onyx/i).parentElement).toHaveStyle({
-            width: "12rem",
+            width: "14rem",
         });
     });
 
@@ -40,7 +40,7 @@ describe("<Logo />", () => {
         renderWithTheme(<Logo size="large" />);
 
         expect(screen.getByLabelText(/Onyx/i).parentElement).toHaveStyle({
-            width: "26rem",
+            width: "28rem",
         });
     });
 
