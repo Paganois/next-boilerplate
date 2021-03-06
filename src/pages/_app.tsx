@@ -1,10 +1,9 @@
 import { AppProps } from "next/app";
-import { ThemeProvider } from "styled-components";
 
 import Head from "next/head";
 
-import GlobalStyle from "styles/global";
 import theme from "styles/theme";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const pageOptions = {
     title: "Onyx - Next Boilerplate",
@@ -16,7 +15,7 @@ const pageOptions = {
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
     return (
-        <ThemeProvider theme={theme}>
+        <ChakraProvider resetCSS theme={theme}>
             <Head>
                 {/* Title */}
                 <title>{pageOptions.title}</title>
@@ -108,9 +107,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
                 />
                 <link rel="manifest" href="manifest.json" />
             </Head>
-            <GlobalStyle />
             <Component {...pageProps} />
-        </ThemeProvider>
+        </ChakraProvider>
     );
 };
 

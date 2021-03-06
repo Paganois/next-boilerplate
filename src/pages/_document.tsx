@@ -3,42 +3,22 @@ import Document, {
     Head,
     Main,
     NextScript,
-    DocumentContext,
+    DocumentProps,
 } from "next/document";
-import { ServerStyleSheet } from "styled-components";
 
-export default class MyDocument extends Document {
-    static async getInitialProps(ctx: DocumentContext) {
-        const sheet = new ServerStyleSheet();
-        const originalRenderPage = ctx.renderPage;
+import { ColorModeScript } from "@chakra-ui/react";
+import theme from "../styles/theme";
 
-        try {
-            ctx.renderPage = () =>
-                originalRenderPage({
-                    enhanceApp: (App) => (props) =>
-                        sheet.collectStyles(<App {...props} />),
-                });
-
-            const initialProps = await Document.getInitialProps(ctx);
-            return {
-                ...initialProps,
-                styles: (
-                    <>
-                        {initialProps.styles}
-                        {sheet.getStyleElement()}
-                    </>
-                ),
-            };
-        } finally {
-            sheet.seal();
-        }
-    }
-
+export default class MyDocument extends Document<DocumentProps> {
     render() {
         return (
             <Html lang="en">
                 <Head />
                 <body>
+                    {/* Make Color mode to persists when you refresh the page. */}
+                    <ColorModeScript
+                        initialColorMode={theme.config.initialColorMode}
+                    />
                     <Main />
                     <NextScript />
                 </body>
