@@ -1,5 +1,3 @@
-![Paganois](public/img/logo-bg.png?raw=true)
-
 <a href="https://github.com/paganois/next-boilerplate/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/paganois/next-boilerplate?style=for-the-badge&logo=github"></a>
 
 
