@@ -1,9 +1,9 @@
-![Onyx](public/img/logo-bg.png?raw=true)
+![Paganois](public/img/logo-bg.png?raw=true)
 
-<a href="https://github.com/onyxgg/next-boilerplate/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/onyxgg/next-boilerplate?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/paganois/next-boilerplate/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/paganois/next-boilerplate?style=for-the-badge&logo=github"></a>
 
 
-This is a [Next.js](https://nextjs.org/) boilerplate by [`Onyx Team`](https://github.com/onyxgg).
+This is a [Next.js](https://nextjs.org/) boilerplate by [`Paganois`](https://github.com/paganois).
 
 # Getting Started
 
